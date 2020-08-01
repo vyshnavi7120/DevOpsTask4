@@ -10,7 +10,7 @@ spec:
     tier: frontend
   type: NodePort
   ports:
-    - nodePort: 32000
+    - nodePort: 32021
       port: 81
       targetPort: 80
   
@@ -29,7 +29,7 @@ spec:
     requests:
       storage: 20Gi
 ---
-apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   name: webdeploy
